@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/y2mate.com - RPG Towns Music & RPG Villages Music_xu2pESvXcmM_cut (2) (online-audio-converter.com).wav-dfb84f13a6e9162d6678e82bdfb27af9.sample"
+
+[deps]
+
+source_file="res://Music and Sounds/y2mate.com - RPG Towns Music & RPG Villages Music_xu2pESvXcmM_cut (2) (online-audio-converter.com).wav"
+dest_files=[ "res://.import/y2mate.com - RPG Towns Music & RPG Villages Music_xu2pESvXcmM_cut (2) (online-audio-converter.com).wav-dfb84f13a6e9162d6678e82bdfb27af9.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

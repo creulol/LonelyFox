@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://World/goat.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "IdleGoat"
+length = 8.0
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 20, 21, 22, 23, 23, 23, 23, 23, 23, 21, 20, 20, 20 ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 15.8527, 5.28193 )
+
+[node name="Goat" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -1.67525, -7.28806 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -10 )
+vframes = 8
+hframes = 4
+frame = 20
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "IdleGoat"
+anims/IdleGoat = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.21463, 0.643913 )
+shape = SubResource( 2 )
