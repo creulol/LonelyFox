@@ -14,7 +14,7 @@
 [sub_resource type="ShaderMaterial" id=1]
 resource_local_to_scene = true
 shader = ExtResource( 10 )
-shader_param/active = true
+shader_param/active = false
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
@@ -101,7 +101,6 @@ script = ExtResource( 4 )
 material = SubResource( 1 )
 frames = SubResource( 7 )
 animation = "Voando"
-frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 
